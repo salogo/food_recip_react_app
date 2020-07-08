@@ -1,4 +1,4 @@
-export const recipe = {
+export const recipe = {  
     f2f_url:"https://recipesapi.herokuapp.com/api/get?rId=41470",
     image_url: "https://res.cloudinary.com/dk4ocuiwa/image/upload/v1575163942/RecipesApi/596220f796.jpg",
         "ingredients": [
@@ -12,8 +12,8 @@ export const recipe = {
             "3/4 cup mozzarella, shredded",
             "red onion to taste, thinly sliced",
             "fresh cilantro to taste\n"
-        ],
-        "image_url": "https://res.cloudinary.com/dk4ocuiwa/image/upload/v1575163942/RecipesApi/BBQChickenPizzawithCauliflowerCrust5004699695624ce.jpg",
+        ],  /*
+       "image_url": "https://res.cloudinary.com/dk4ocuiwa/image/upload/v1575163942/RecipesApi/BBQChickenPizzawithCauliflowerCrust5004699695624ce.jpg",
         "social_rank": 99.9999999999994,
         "_id": "5dd0f2d346d3bd53d2899094",
         "publisher": "Closet Cooking",
@@ -21,6 +21,6 @@ export const recipe = {
         "recipe_id": "41470",
         "publisher_url": "http://closetcooking.com",
         "title": "Cauliflower Pizza Crust (with BBQ Chicken Pizza)",
-        "__v": 0
-    
+        "__v": 0   
+    */
 }
