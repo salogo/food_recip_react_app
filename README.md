@@ -10,6 +10,13 @@ Simple react application that allows users to view, create, delete and update re
 * Css3
 * JavaScript
 
+## Features
+- Ingredients
+- Recipes Details Screen
+- Ingredients List
+- Recipes by Ingredient
+- Search
+
 ## Usage
 
 > Clone the repository to your local machine
