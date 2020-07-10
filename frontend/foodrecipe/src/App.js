@@ -3,6 +3,7 @@ import './App.css';
 import { recipes } from "./tempList";
 import RecipeList from './components/RecipeList';
 import RecipeDetails from './components/RecipeDetails';
+import ViewRecipe from './components/ViewRecipe';
 
 
 class App extends Component {
@@ -14,8 +15,13 @@ class App extends Component {
     pageIndex: 1,
     search: "",
     query:'&q=',
-    error:''
-    
+    error:'',
+
+    recipename:'',
+    description:'',
+    URLimages:'',
+    recipesArray:[]
+  
   };
 
   async getRecipes() {
@@ -35,16 +41,16 @@ class App extends Component {
           return {recipes:jsonData.recipes}
         })
       }
-      /* this.setState({
-        recipes: jsonData.recipes
-      }); */
+      
     } catch (error) {
       console.log(error);
     }
   }
   
     componentDidMount() {
-      this.getRecipes()
+      this.getRecipes();
+      this.getrecipes()
+      
     }
   
   displayPage = (index) => {
@@ -96,12 +102,69 @@ class App extends Component {
       this.getRecipes();
     })
   }
+  //
+  getrecipes = ()=>{
+    fetch('http://localhost:3001/api/recipes')
+      .then(response => response.json())
+      .then(result => { 
+        this.setState({
+          recipesArray: result
+        })
+      }) 
+  }
+   
+    handleTextBoxChange = (e) => {
+      this.setState({
+        [e.target.name]: e.target.value
+      })
+    }
+  
+  addRecipe = () =>{
+    const recipe = {
+      recipename:this.state.recipename,
+      description:this.state.description,
+      URLimages:this.state.URLimages
+    }
+  fetch('http://localhost:3001/user/add-recipe',{
+    method:'POST',
+    headers:{'Content-Type':'application/json'},
+    body:JSON.stringify(recipe)
+  }).then(()=>{
+    this.getrecipes()
+  })
+  }
+  
+  deleteRecipe = (recipeid) =>{   
+  fetch('http://localhost:3001/user/delete-recipe',{
+    method:'POST',
+    headers:{'Content-Type':'application/json'},
+    body:JSON.stringify({recipeid:recipeid})
+  
+  }).then(( response)=>{ return response.json() }).then((result)=>{
+    console.log(result)
+    this.getrecipes()
+  
+  })
+  }
+ 
+ 
+
+  
   render() {
 
     //console.log(this.state.recipes);
     return (
       <React.Fragment>
-        {this.displayPage(this.state.pageIndex)}
+           
+      <input name="recipename" type="text" placeholder="Name" onChange={this.handleTextBoxChange} />
+      <input name="description" type="text" placeholder="description" onChange={this.handleTextBoxChange} />
+      <input name="URLimages" type="text" placeholder="URLimages" onChange={this.handleTextBoxChange} />
+       <button onClick={this.addRecipe} >Submit</button>
+          
+    {  /*  */  }   {this.displayPage(this.state.pageIndex)}   
+         <ViewRecipe   recipesArray={this.state.recipesArray} deleteRecipe={this.deleteRecipe} /> 
+               
+
       </React.Fragment>
     );
   }

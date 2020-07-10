@@ -2,31 +2,7 @@ import React, { Component } from 'react';
 import { recipe } from "../tempDetails";
 
 export default class RecipeDetails extends Component {
-  /*constructor(props){
-    super(props)
-    this.state = {
-      recipe:recipe,
-      url: 
-      `https://cors-anywhere.herokuapp.com/https://recipesapi.herokuapp.com/api/get?rId=${this.props.id}`
-
-    };
-  }
-
   
-  async componentDidMount(){
-    try{
-
-      const data = await fetch(this.state.url);
-      const jsonData = await data.json();
-      console.log(jsonData)
-      this.setState({
-        recipe:jsonData.recipe
-      });
-    } catch(error){
-      console.log(error);    
-    }
-  }
-*/
   state = {
     recipe: recipe
   }

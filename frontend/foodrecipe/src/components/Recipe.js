@@ -13,7 +13,7 @@ export default class Recipe extends Component {
 
     return (
       <React.Fragment>
-        <div className="col-10 mx-auto col-md-6 col-lg-4 my-3">
+        <div className="col-10 mx-auto col-md-6 col-lg-4 my-3">  
           <div className="card">
             <img src={image_url}
               className="img-card-top"
@@ -37,7 +37,7 @@ export default class Recipe extends Component {
           </a>
             </div>
           </div>
-        </div>
+        </div>    
       </React.Fragment>
     );
   }
