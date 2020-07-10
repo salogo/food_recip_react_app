@@ -8,8 +8,8 @@ function Viewrecipe(props) {
 
    let recipeItems = props.recipesArray.map((recipe, index) => {
       return <div key={index} >
- 
-         <div className="col-10 mx-auto col-md-6 col-lg-4 my-3" >
+       
+         <div className="col-10 mx-auto col-md-6 col-lg-4 my-3 " >
          <div className="card">
            <img src={recipe.URLimages}
              className="img-card-top"

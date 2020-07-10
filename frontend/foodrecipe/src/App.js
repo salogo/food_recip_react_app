@@ -155,7 +155,7 @@ class App extends Component {
     //console.log(this.state.recipes);
     return (
       <React.Fragment>
-           
+      <h1 className="add_recipe"> <label className="text-danger">Add Recipe</label> </h1>
       <input name="recipename" type="text" placeholder="Name" onChange={this.handleTextBoxChange} />
       <input name="description" type="text" placeholder="description" onChange={this.handleTextBoxChange} />
       <input name="URLimages" type="text" placeholder="URLimages" onChange={this.handleTextBoxChange} />
