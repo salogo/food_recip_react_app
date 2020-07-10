@@ -27,10 +27,3 @@ $ npm run start
 ```
 
 ## Authors
-
-* **LaKendra Farris** 
-* **Zakaria Salogo**
-* **David Cuero**
-
-
-
