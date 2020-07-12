@@ -154,14 +154,19 @@ class App extends Component {
 
     //console.log(this.state.recipes);
     return (
-      <React.Fragment>
+      <React.Fragment>    
       <h1 className="add_recipe"> <label className="text-danger">Add Recipe</label> </h1>
-      <input name="recipename" type="text" placeholder="Name" onChange={this.handleTextBoxChange} />
-      <input name="description" type="text" placeholder="description" onChange={this.handleTextBoxChange} />
-      <input name="URLimages" type="text" placeholder="URLimages" onChange={this.handleTextBoxChange} />
-       <button onClick={this.addRecipe} >Submit</button>
-          
-    {  /*  */  }   {this.displayPage(this.state.pageIndex)}   
+      <div className="centerBox">  
+
+    <p>   <input className="form-control" name="recipename" type="text" placeholder="Name" onChange={this.handleTextBoxChange} /></p>
+    <p> <input className="form-control"  name="description" type="text" placeholder="description" onChange={this.handleTextBoxChange} /></p>
+    <p> <input className="form-control"  name="URLimages" type="text" placeholder="URLimages" onChange={this.handleTextBoxChange} /></p>
+
+    <p>   <button  type="button"
+    className="btn btn-primary text-capitalize" onClick={this.addRecipe} >Submit</button>  </p>
+       </div>   
+    {  /*    */ }   {this.displayPage(this.state.pageIndex)}    
+         <hr/>
          <ViewRecipe   recipesArray={this.state.recipesArray} deleteRecipe={this.deleteRecipe} /> 
                
 
