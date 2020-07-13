@@ -1,3 +1,5 @@
+
+
 body {
   font-family: 'Courgette', cursive important;
 
@@ -5,3 +7,16 @@ body {
 .text-slanted {
   font-family: 'Open Sans', sans-serif;
 }
+.add_recipe {
+  text-align: center;
+}
+
+
+.centerBox {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+

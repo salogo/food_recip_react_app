@@ -20,7 +20,7 @@ export default class RecipeSearch extends Component {
           </label>
                 <div className="input-group">
                   <input type="text" name="serch"
-                    placeholder="chicken,onions,carrots"
+                    placeholder="chicken,onions,carrots , or recipe name"
                     className="form-control"
                     value={value}
                     onChange={handleChange}
