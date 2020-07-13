@@ -41,10 +41,10 @@ $ npm run start
 
 ## Authors
 
- **(https://github.com/devouracid)**
+👤  **David Cuero(https://github.com/devouracid)**
 
 👤 **LaKendra Farris**
 
- **(https://github.com/salogo)**
+👤 **Zakaria Salogo(https://github.com/salogo)**
 
 
