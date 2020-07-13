@@ -43,7 +43,7 @@ $ npm run start
 
 👤  **David Cuero(https://github.com/devouracid)**
 
-👤 **LaKendra Farris**
+👤 **LaKendra Farris(https://github.com/lakendrafarris)**
 
 👤 **Zakaria Salogo(https://github.com/salogo)**
 
