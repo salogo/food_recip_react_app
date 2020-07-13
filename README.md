@@ -9,6 +9,12 @@ Simple react application that allows users to view, create, delete and update re
 * Html
 * Css3
 * JavaScript
+*Bootstrap
+*Third party Api
+*Node.js
+*Express.js
+*PostgreSQL
+*ElephantSQL
 
 ## Features
 - Ingredients
