@@ -159,7 +159,7 @@ class App extends Component {
       <div className="centerBox">  
 
     <p>   <input className="form-control" name="recipename" type="text" placeholder="Name" onChange={this.handleTextBoxChange} /></p>
-    <p> <input className="form-control"  name="description" type="text" placeholder="description" onChange={this.handleTextBoxChange} /></p>
+    <p> <input className="form-control"  name="description" type="text" placeholder="Details" onChange={this.handleTextBoxChange} /></p>
     <p> <input className="form-control"  name="URLimages" type="text" placeholder="URLimages" onChange={this.handleTextBoxChange} /></p>
 
     <p>   <button  type="button"

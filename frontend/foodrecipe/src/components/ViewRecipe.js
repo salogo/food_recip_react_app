@@ -22,13 +22,10 @@ function Viewrecipe(props) {
                      onClick={() => { props.deleteRecipe(recipe.id) }}>
                      Delete</button>
                   </p>
-                  <p style={{width: "25rem"}}><b>Recipe Name : </b>{recipe.recipename} </p>
-                  <p style={{width: "25rem"}}>  <b>Description : </b>{recipe.description}  </p>
+                  <p><b>Recipe Name : </b>{recipe.recipename} </p>
+                  <p>  <b>Details: </b>{recipe.description}  </p>
                </div>
             </div>
-
-
-
          </div>
       </div>
 
