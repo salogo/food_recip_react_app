@@ -1,3 +1,10 @@
+Screen Shot of the App
+![image](https://user-images.githubusercontent.com/54459398/87483287-fdde7f80-c5f8-11ea-86cb-40364ca93bd8.png)
+
+# 
+Youtub Video:
+https://youtu.be/wO5CmrI_El4
+
 # Food Recipes React App
 
 Simple react application that allows users to view, create, delete and update recipes. 
