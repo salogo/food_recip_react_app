@@ -6,6 +6,8 @@ app.use(cors())
 const models = require('./models')
 
 
+const PORT = process.env.PORT || 8080
+
 app.post('/user/delete-recipe', (req,res) => {
 console.log(req.body.recipeid)
     let id = req.body.recipeid
@@ -49,6 +51,6 @@ res.send()
 })
 
 
-app.listen(3001, () => {
+app.listen(PORT, () => {
     console.log('Server is running...')
 })
