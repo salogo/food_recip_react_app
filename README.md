@@ -9,6 +9,12 @@ Simple react application that allows users to view, create, delete and update re
 * Html
 * Css3
 * JavaScript
+* Bootstrap
+* Third party Api
+* Node.js
+* Express.js
+* PostgreSQL
+* ElephantSQL
 
 ## Features
 - Ingredients
@@ -35,8 +41,10 @@ $ npm run start
 
 ## Authors
 
-👤 **David Cuero**
+👤  **David Cuero(https://github.com/devouracid)**
 
-👤 **LaKendra Farris**
+👤 **LaKendra Farris(https://github.com/lakendrafarris)**
 
-👤 **Zakaria Salogo**
+👤 **Zakaria Salogo(https://github.com/salogo)**
+
+
