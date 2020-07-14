@@ -104,7 +104,8 @@ class App extends Component {
   }
   //
   getrecipes = ()=>{
-    fetch('http://localhost:3001/api/recipes')
+   // fetch('http://localhost:3001/api/recipes')
+   fetch('http://herokuapp.com/api/recipes')
       .then(response => response.json())
       .then(result => { 
         this.setState({
@@ -125,7 +126,8 @@ class App extends Component {
       description:this.state.description,
       URLimages:this.state.URLimages
     }
-  fetch('http://localhost:3001/user/add-recipe',{
+  //fetch('http://localhost:3001/user/add-recipe',{
+    fetch('http://herokuapp.com/user/add-recipe',{
     method:'POST',
     headers:{'Content-Type':'application/json'},
     body:JSON.stringify(recipe)
@@ -135,7 +137,8 @@ class App extends Component {
   }
   
   deleteRecipe = (recipeid) =>{   
-  fetch('http://localhost:3001/user/delete-recipe',{
+ // fetch('http://localhost:3001/user/delete-recipe',{
+  fetch('http://herokuapp.com/user/delete-recipe',{
     method:'POST',
     headers:{'Content-Type':'application/json'},
     body:JSON.stringify({recipeid:recipeid})
