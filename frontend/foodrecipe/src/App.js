@@ -4,6 +4,8 @@ import { recipes } from "./tempList";
 import RecipeList from './components/RecipeList';
 import RecipeDetails from './components/RecipeDetails';
 import ViewRecipe from './components/ViewRecipe';
+import NavBar from './components/NavBar';
+import Fotor from './components/Fotor';
 
 
 class App extends Component {
@@ -154,7 +156,8 @@ class App extends Component {
 
     //console.log(this.state.recipes);
     return (
-      <React.Fragment>    
+      <React.Fragment>   
+      <NavBar /> 
       <h1 className="add_recipe"> <label className="text-danger">Add Recipe</label> </h1>
       <div className="centerBox">  
 
@@ -168,7 +171,8 @@ class App extends Component {
     {  /*    */ }   {this.displayPage(this.state.pageIndex)}    
          <hr/>
          <ViewRecipe   recipesArray={this.state.recipesArray} deleteRecipe={this.deleteRecipe} /> 
-               
+          
+         <Fotor />
 
       </React.Fragment>
     );
