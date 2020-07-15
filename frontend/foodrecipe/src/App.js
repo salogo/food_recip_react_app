@@ -4,7 +4,7 @@ import { recipes } from "./tempList";
 import RecipeList from './components/RecipeList';
 import RecipeDetails from './components/RecipeDetails';
 import ViewRecipe from './components/ViewRecipe';
-import Navbar from './components/Navbar';
+
 
 
 class App extends Component {
@@ -159,7 +159,7 @@ class App extends Component {
     //console.log(this.state.recipes);
     return (
       <React.Fragment>    
-      <Navbar />
+     
 
       <h1 className="add_recipe"> <label className="text-danger">Add Recipe</label> </h1>
       <div className="centerBox">  
