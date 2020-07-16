@@ -5,7 +5,7 @@ import RecipeList from './components/RecipeList';
 import RecipeDetails from './components/RecipeDetails';
 import ViewRecipe from './components/ViewRecipe';
 import NavBar from './components/NavBar';
-import Fotor from './components/Fotor';
+//import Fotor from './components/Fotor';
 
 
 class App extends Component {
@@ -172,7 +172,7 @@ class App extends Component {
          <hr/>
          <ViewRecipe   recipesArray={this.state.recipesArray} deleteRecipe={this.deleteRecipe} /> 
           
-         <Fotor />
+     {  /*    <Fotor />   */}
 
       </React.Fragment>
     );

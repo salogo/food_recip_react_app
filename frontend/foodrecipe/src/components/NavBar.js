@@ -1,12 +1,17 @@
 import React from 'react'
-
+import '../index.css'
 
 function NavBar(){
     return <div>
              
-             <img src={process.env.PUBLIC_URL + 'nav_logo.png'} alt="logo" />
+             <img className="logo" src={process.env.PUBLIC_URL + 'nav_logo.png'} alt="logo" />
            
-          </div>
-}
-
+             </div>
+            }
+            
 export default NavBar
+            
+
+
+
+
