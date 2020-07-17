@@ -8,6 +8,7 @@ import NavBar from './components/NavBar'
 
 
 
+
 class App extends Component {
   state = {
     recipes: recipes,
