@@ -4,8 +4,8 @@ import { recipes } from "./tempList";
 import RecipeList from './components/RecipeList';
 import RecipeDetails from './components/RecipeDetails';
 import ViewRecipe from './components/ViewRecipe';
-import NavBar from './components/NavBar';
-//import Fotor from './components/Fotor';
+import NavBar from './components/NavBar'
+
 
 
 class App extends Component {
@@ -106,7 +106,8 @@ class App extends Component {
   }
   //
   getrecipes = ()=>{
-    fetch('http://localhost:3001/api/recipes')
+   // fetch('http://localhost:3001/api/recipes')
+   fetch('https://intelligent-saucisson-49372.herokuapp.com/api/recipes')
       .then(response => response.json())
       .then(result => { 
         this.setState({
@@ -127,7 +128,8 @@ class App extends Component {
       description:this.state.description,
       URLimages:this.state.URLimages
     }
-  fetch('http://localhost:3001/user/add-recipe',{
+  //fetch('http://localhost:3001/user/add-recipe',{
+    fetch('https://intelligent-saucisson-49372.herokuapp.com/user/add-recipe',{
     method:'POST',
     headers:{'Content-Type':'application/json'},
     body:JSON.stringify(recipe)
@@ -137,7 +139,8 @@ class App extends Component {
   }
   
   deleteRecipe = (recipeid) =>{   
-  fetch('http://localhost:3001/user/delete-recipe',{
+ // fetch('http://localhost:3001/user/delete-recipe',{
+  fetch('https://intelligent-saucisson-49372.herokuapp.com/user/delete-recipe',{
     method:'POST',
     headers:{'Content-Type':'application/json'},
     body:JSON.stringify({recipeid:recipeid})
@@ -156,8 +159,9 @@ class App extends Component {
 
     //console.log(this.state.recipes);
     return (
-      <React.Fragment>   
-      <NavBar /> 
+      <React.Fragment>    
+     
+      <NavBar />
       <h1 className="add_recipe"> <label className="text-danger">Add Recipe</label> </h1>
       <div className="centerBox">  
 
@@ -171,8 +175,7 @@ class App extends Component {
     {  /*    */ }   {this.displayPage(this.state.pageIndex)}    
          <hr/>
          <ViewRecipe   recipesArray={this.state.recipesArray} deleteRecipe={this.deleteRecipe} /> 
-          
-     {  /*    <Fotor />   */}
+               
 
       </React.Fragment>
     );
