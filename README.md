@@ -1,4 +1,4 @@
-Screen Shot of the App
+Screen Shot of the App .
 ![image](https://user-images.githubusercontent.com/54459398/87483287-fdde7f80-c5f8-11ea-86cb-40364ca93bd8.png)
 
 # 
